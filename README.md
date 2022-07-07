@@ -15,7 +15,7 @@ $ npm install -g yo
  
 Download and install the generator via npm:
 ```bash
-$ npm i -g generator-creatio-helloworldtemplate
+$ npm i -g @creatioai/generator-helloworldtemplate
 ```
  
 Use the yeoman:
