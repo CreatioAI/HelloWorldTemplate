@@ -1,4 +1,4 @@
-# generator-create-custom-template-creatio
+# Hello World Template generator
 Yeoman generator for custom templates
 
 ## How to use the Creatio Template generator 
