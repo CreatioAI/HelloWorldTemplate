@@ -20,7 +20,7 @@ $ npm i -g generator-creatio-helloworldtemplate
  
 Use the yeoman:
 ```bash
-$ yo creatio-helloworldtemplate
+$ yo @creatioai/helloworldtemplate
 ```
  
 Once we have the structure of the template in the *"template"* folder, modify the *.json* files (*template_name.json* and *scene1.json* in the *"Scenes"* folder) to fill in the desired information and add the necessary assets in the *"Assets"* folder.
