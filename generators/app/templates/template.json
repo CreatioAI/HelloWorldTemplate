@@ -1,0 +1,14 @@
+{
+    "templateId": "<%= templateName %>",
+    "description": "Template description",
+    "id": "template_test",
+    "previewGIF": "example_gif.gif",
+    "visibility":"Private",
+    "owner": "Example",
+    "tags": "tag1",
+    "scenes": 
+    [
+        "scene1"
+    ]
+
+}

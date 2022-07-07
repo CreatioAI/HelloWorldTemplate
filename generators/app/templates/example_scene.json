@@ -1,0 +1,58 @@
+{
+    "id": "scene1",
+    "type": "Type example",
+    "name": "Name example",
+    "video": "scene1.mp4",
+    "widgets": [
+        {
+            "id": "widget1",
+            "type": "text",
+            "description": "name_widget1",
+            "variableName": "name1",
+            "value": "Name Surname",
+            "features": {
+                "font": "Titan-One",
+                "color": "#E9914B",
+                "align": "center"
+            },
+            "transition": {
+                "delay": 4,
+                "duration": 3.15,
+                "fadeIn": 0.3,
+                "fadeOut": 0.3
+            },
+            "position": {
+                "x": 670,
+                "y": 185,
+                "w": 570,
+                "h": 320
+            },
+            "properties": {}
+        },
+        {
+            "id": "widget2",
+            "type": "text",
+            "description": "email_widget2",
+            "variableName": "email1",
+            "value": "example@example.com",
+            "features": {
+                "font": "Titan-One",
+                "color": "#E9914B",
+                "align": "center"
+            },
+            "transition": {
+                "delay": 12,
+                "duration": 2,
+                "fadeIn": 0.3,
+                "fadeOut": 0.3
+            },
+            "position": {
+                "x": 670,
+                "y": 185,
+                "w": 570,
+                "h": 320
+            },
+            "properties": {}
+        }      
+    ]
+}
