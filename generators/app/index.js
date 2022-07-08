@@ -18,10 +18,15 @@ module.exports = class extends Generator {
 
     writing() {
       mkdirp.sync(path.join('template', 'Assets'));
+      mkdirp.sync(path.join('template/Assets', 'Gifs'));
+      mkdirp.sync(path.join('template/Assets', 'Images'));
+      mkdirp.sync(path.join('template/Assets', 'Videos'));
       mkdirp.sync(path.join('template', 'Scenes'));
       const destinationPathTemplate = path.resolve('template', `template_${this.templateName}.json`);
       const destinationPathScene = path.resolve(`template/Scenes`, `scene1.json`);
-      const destinationPathImage = path.resolve(`template/Assets`, `image1.png`);
+      const destinationPathImage = path.resolve(`template/Assets/Images`, `image1.png`);
+      const destinationPathVideo = path.resolve(`template/Assets/Videos`, `video1.mp4`);
+      const destinationPathGif = path.resolve(`template/Assets/Gifs`, `gif1.gif`);
       const destinationPathPackage = path.resolve(`./`, `package.json`);
       const destinationPathWebpack = path.resolve(`./`, `webpack.config.js`);
 
@@ -37,6 +42,14 @@ module.exports = class extends Generator {
       this.fs.copyTpl(
         this.templatePath('example_image.png'),
         this.destinationPath(destinationPathImage),
+      );
+      this.fs.copyTpl(
+        this.templatePath('example_video.mp4'),
+        this.destinationPath(destinationPathVideo),
+      );
+      this.fs.copyTpl(
+        this.templatePath('example_gif.gif'),
+        this.destinationPath(destinationPathGif),
       );
       this.fs.copyTpl(
         this.templatePath('package.json'),

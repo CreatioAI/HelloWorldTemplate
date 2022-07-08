@@ -1,10 +1,10 @@
 {
-    "templateId": "<%= templateName %>",
+    "name": "<%= templateName %>",
     "description": "Template description",
-    "id": "template_test",
+    "id": "template-test",
     "previewGIF": "example_gif.gif",
     "visibility":"Private",
-    "owner": "Example",
+    "owner": "Raona",
     "tags": "tag1",
     "scenes": 
     [

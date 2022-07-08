@@ -2,7 +2,7 @@
     "id": "scene1",
     "type": "Type example",
     "name": "Name example",
-    "video": "scene1.mp4",
+    "video": "video1.mp4",
     "widgets": [
         {
             "id": "widget1",
