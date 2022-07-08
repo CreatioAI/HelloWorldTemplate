@@ -1,4 +1,4 @@
-# generator-create-custom-template-creatio
+# Hello World Template generator
 Yeoman generator for custom templates
 
 ## How to use the Creatio Template generator 
@@ -15,12 +15,12 @@ $ npm install -g yo
  
 Download and install the generator via npm:
 ```bash
-$ npm i -g generator-creatio-helloworldtemplate
+$ npm i -g @creatioai/generator-helloworldtemplate
 ```
  
 Use the yeoman:
 ```bash
-$ yo creatio-helloworldtemplate
+$ yo @creatioai/helloworldtemplate
 ```
  
 Once we have the structure of the template in the *"template"* folder, modify the *.json* files (*template_name.json* and *scene1.json* in the *"Scenes"* folder) to fill in the desired information and add the necessary assets in the *"Assets"* folder.
