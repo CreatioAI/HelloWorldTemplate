@@ -1,14 +1,15 @@
 {
     "name": "<%= templateName %>", //YOUR_TEMPLATE_NAME_HERE
     "description": "Template description", //YOUR_TEMPLATE_DESCRIPTION_HERE
-    "id": "template-test", //YOUR_TEMPLATE_ID_HERE
-    "previewGIF": "example_gif.gif", //YOUR_GIF_NAME_HERE
-    "visibility":"Private", //Private_OR_Public
-    "owner": "example@example.com", //YOUR_OWNER_NAME_HERE
+    "id": "template-<%= templateName %>", //YOUR_TEMPLATE_ID_HERE
+    "previewGIF": "preview.gif", //YOUR_GIF_NAME_HERE
+    "visibility": "<%= visibility %>", //Private_OR_Public
+    "owner": "<%= owner %>", //YOUR_OWNER_NAME_HERE
     "tags": "tag1, tag2", //YOUR_TAGS_HERE
     "scenes": //LIST_YOUR_SCENES_HERE 
     [
-        "scene1"
+        "scene1",
+        "scene2"
     ]
 
 }

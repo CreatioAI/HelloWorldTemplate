@@ -13,35 +13,48 @@ module.exports = class extends Generator {
           message: "What is your template name?"
         },
       ]);
+      const {visibility} = await this.prompt([
+        {
+          name: "visibility",
+          message: "Do you want your template to be public or private? Type Public or Private"
+        },
+      ]);
+      const {owner} = await this.prompt([
+        {
+          name: "owner",
+          message: "Who is the owner of the template?"
+        },
+      ]);
       this.templateName = templateName;
+      this.visibility = visibility;
+      this.owner = owner;
     }
 
     writing() {
       mkdirp.sync(path.join('template', 'Assets'));
-      mkdirp.sync(path.join('template/Assets', 'Gifs'));
-      mkdirp.sync(path.join('template/Assets', 'Images'));
-      mkdirp.sync(path.join('template/Assets', 'Videos'));
       mkdirp.sync(path.join('template', 'Scenes'));
       const destinationPathTemplate = path.resolve('template', `template_${this.templateName}.json`);
-      const destinationPathScene = path.resolve(`template/Scenes`, `scene1.json`);
-      const destinationPathImage = path.resolve(`template/Assets/Images`, `image1.png`);
-      const destinationPathVideo = path.resolve(`template/Assets/Videos`, `video1.mp4`);
-      const destinationPathGif = path.resolve(`template/Assets/Gifs`, `gif1.gif`);
+      const destinationPathScene1 = path.resolve(`template/Scenes`, `scene1.json`);
+      const destinationPathScene2 = path.resolve(`template/Scenes`, `scene2.json`);
+      const destinationPathVideo = path.resolve(`template/Assets`, `video1.mp4`);
+      const destinationPathGif = path.resolve(`template/Assets`, `preview.gif`);
       const destinationPathPackage = path.resolve(`./`, `package.json`);
       const destinationPathWebpack = path.resolve(`./`, `webpack.config.js`);
 
       this.fs.copyTpl(
         this.templatePath('template.json'),
         this.destinationPath(destinationPathTemplate),
-        { templateName: `${this.templateName}` }
+        { templateName: `${this.templateName}`,
+          visibility: `${this.visibility}`,
+          owner: `${this.owner}` }
       );
       this.fs.copyTpl(
-        this.templatePath('example_scene.json'),
-        this.destinationPath(destinationPathScene),
+        this.templatePath('example_scene1.json'),
+        this.destinationPath(destinationPathScene1),
       );
       this.fs.copyTpl(
-        this.templatePath('example_image.png'),
-        this.destinationPath(destinationPathImage),
+        this.templatePath('example_scene2.json'),
+        this.destinationPath(destinationPathScene2),
       );
       this.fs.copyTpl(
         this.templatePath('example_video.mp4'),

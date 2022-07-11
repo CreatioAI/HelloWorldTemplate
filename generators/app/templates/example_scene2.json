@@ -1,0 +1,58 @@
+{
+    "id": "scene2", //YOUR_SCENE_ID_HERE
+    "type": "Type example", //YOUR_SCENE_TYPE_HERE
+    "name": "Name example", //YOUR_SCENE_NAME_HERE
+    "video": "video1.mp4", //YOUR_VIDEO_NAME_HERE
+    "widgets": [
+        {
+            "id": "widget1", //YOUR_WIDGET_ID_HERE
+            "type": "text",//YOUR_WIDGET_TYPE_HERE
+            "description": "name_widget1", //YOUR_WIDGET_DESCRIPTION_HERE
+            "variableName": "name1", //YOUR_WIDGET_VARIABLE_NAME_HERE
+            "value": "Name Surname", //YOUR_WIDGET_DEFAULT_VALUE_HERE
+            "features": { //LIST_FEATURES
+                "font": "Titan-One",
+                "color": "#E9914B",
+                "align": "center"
+            },
+            "transition": { //TRANSITION_VARIABLES
+                "delay": 4,
+                "duration": 3.15,
+                "fadeIn": 0.3,
+                "fadeOut": 0.3
+            },
+            "position": { //POSITION_VARIABLES
+                "x": 670,
+                "y": 185,
+                "w": 570,
+                "h": 320
+            },
+            "properties": {}
+        },
+        {
+            "id": "widget2",
+            "type": "text",
+            "description": "email_widget2",
+            "variableName": "email1",
+            "value": "example@example.com",
+            "features": {
+                "font": "Titan-One",
+                "color": "#E9914B",
+                "align": "center"
+            },
+            "transition": {
+                "delay": 12,
+                "duration": 2,
+                "fadeIn": 0.3,
+                "fadeOut": 0.3
+            },
+            "position": {
+                "x": 670,
+                "y": 185,
+                "w": 570,
+                "h": 320
+            },
+            "properties": {}
+        }      
+    ]
+}
