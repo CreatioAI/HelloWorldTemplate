@@ -38,6 +38,7 @@ module.exports = class extends Generator {
       const destinationPathScene2 = path.resolve(`template/Scenes`, `scene2.json`);
       const destinationPathVideo = path.resolve(`template/Assets`, `video1.mp4`);
       const destinationPathGif = path.resolve(`template/Assets`, `preview.gif`);
+      const destinationPathImage = path.resolve(`template/Assets`, `image.png`);
       const destinationPathPackage = path.resolve(`./`, `package.json`);
       const destinationPathWebpack = path.resolve(`./`, `webpack.config.js`);
 
@@ -63,6 +64,10 @@ module.exports = class extends Generator {
       this.fs.copyTpl(
         this.templatePath('example_gif.gif'),
         this.destinationPath(destinationPathGif),
+      );
+      this.fs.copyTpl(
+        this.templatePath('example_image.png'),
+        this.destinationPath(destinationPathImage),
       );
       this.fs.copyTpl(
         this.templatePath('package.json'),
