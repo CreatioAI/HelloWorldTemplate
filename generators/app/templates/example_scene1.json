@@ -3,13 +3,22 @@
     "type": "Type example", //YOUR_SCENE_TYPE_HERE
     "name": "Name example", //YOUR_SCENE_NAME_HERE
     "video": "video1.mp4", //YOUR_VIDEO_NAME_HERE
+    "parameters": [
+        {
+            "id": "variable_name1", //YOUR_VARIABLE_NAME_HERE
+            "description":"Variable Name" //YOUR_VARIABLE_DESCRIPTION_HERE
+        },
+        {
+            "id": "variable_name2",
+            "description":"Variable Name"
+        }
+    ],
     "widgets": [
         {
             "id": "widget1", //YOUR_WIDGET_ID_HERE
             "type": "text",//YOUR_WIDGET_TYPE_HERE
             "description": "name_widget1", //YOUR_WIDGET_DESCRIPTION_HERE
-            "variableName": "name1", //YOUR_WIDGET_VARIABLE_NAME_HERE
-            "value": "Name Surname", //YOUR_WIDGET_DEFAULT_VALUE_HERE
+            "value": "{variable_name1}", //YOUR_WIDGET_DEFAULT_VALUE_HERE
             "features": { //LIST_FEATURES
                 "font": "Titan-One",
                 "color": "#E9914B",
@@ -33,8 +42,7 @@
             "id": "widget2",
             "type": "text",
             "description": "email_widget2",
-            "variableName": "email1",
-            "value": "example@example.com",
+            "value": "{variable_name2}",
             "features": {
                 "font": "Titan-One",
                 "color": "#E9914B",
