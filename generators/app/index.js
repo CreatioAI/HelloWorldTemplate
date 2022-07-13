@@ -86,3 +86,6 @@ module.exports = class extends Generator {
     }
     
   };
+
+  exports.default = StarterPackGenerator;
+  module.exports = exports['default'];
